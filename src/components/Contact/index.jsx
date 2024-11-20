@@ -1,6 +1,12 @@
 import Form from "../Form";
 import SectionTitle from "../SectionTitle";
 import "./style.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faGithub,
+  faDiscord,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
@@ -24,13 +30,13 @@ const Contact = () => {
               <h3>My Socials</h3>
               <div className="social-links">
                 <a href="https://github.com/z4dev">
-                  <i className="fab fa-github"></i>
+                  <FontAwesomeIcon icon={faGithub} size="1x" />
                 </a>
                 <a href="https://discordapp.com/users/993778906010226749">
-                  <i className="fab fa-discord"></i>
+                  <FontAwesomeIcon icon={faDiscord} size="1x" />
                 </a>
                 <a href="https://www.linkedin.com/in/izzedeenalfarra">
-                  <i className="fab fa-linkedin"></i>
+                  <FontAwesomeIcon icon={faLinkedin} size="1x" />
                 </a>
               </div>
             </div>
