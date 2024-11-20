@@ -1,21 +1,26 @@
+import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import MainContainer from "./components/MainContainer";
-import LandingSection from "./pages/LandingSection";
-import AboutMe from "./components/AboutMe";
-import Contact from "./components/Contact";
-import { NotFound } from "./pages/NotFound/NotFound";
+import Loader from "./components/Loader";
+
+const LandingSection = lazy(() => import("./pages/LandingSection"));
+const AboutMe = lazy(() => import("./components/AboutMe"));
+const Contact = lazy(() => import("./components/Contact"));
+const NotFound = lazy(() => import("./pages/NotFound/NotFound"));
 
 function App() {
   return (
     <div className="App">
-      <MainContainer>
-        <Routes>
-          <Route index element={<LandingSection />} />
-          <Route path="/about" element={<AboutMe />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </MainContainer>
+      <Suspense fallback={<Loader />}>
+        <MainContainer>
+          <Routes>
+            <Route index element={<LandingSection />} />
+            <Route path="/about" element={<AboutMe />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </MainContainer>
+      </Suspense>
     </div>
   );
 }
