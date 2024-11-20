@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const MainContainer = ({ children }) => {
   const [isAuthorInfoVisible, setAuthorInfoVisible] = useState(false);
@@ -53,7 +55,7 @@ const MainContainer = ({ children }) => {
             <div className="about-author-info">
               <p>About</p>
               <button className="close-author-info" onClick={handleCloseClick}>
-                X
+                <FontAwesomeIcon icon={faTimes} />
               </button>
             </div>
             <p>
@@ -72,6 +74,8 @@ const MainContainer = ({ children }) => {
                 </a>
               </span>
             </p>
+
+            <span className="author-email">wesam@ucst.edu.ps</span>
           </div>
         )}
       </div>

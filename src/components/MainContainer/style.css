@@ -172,9 +172,8 @@ section {
 .author-info {
   max-width: 500px;
   height: auto;
-  background: #ddd5cd;
-  border: 1px dashed #18293c;
-  border-radius: 30px;
+  background: #ffffff;
+  border-radius: 15px;
   padding: 1.2rem;
   text-transform: capitalize;
   position: absolute;
@@ -187,7 +186,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
 .author {
   background-color: #00000000;
@@ -238,8 +237,15 @@ section {
   -o-border-radius: 50%;
   font-weight: 900;
   color: #e02f6b;
+  display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.author-email{
+  text-transform: lowercase;
+  text-decoration: underline;
+  color: #e02f6b;
+}
 @media (max-width: 767px) {
   .author-info {
     font-weight: 400;
