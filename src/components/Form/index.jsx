@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { API_URL } from "../../config/api";
 import "./style.css";
+import ErrorMsg from "../ErrorMsg";
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -63,7 +64,7 @@ const Form = () => {
   return (
     <div className="contact-form">
       <form id="contactForm" method="post" onSubmit={handleSubmit}>
-        <div className="row">
+        <div>
           <div className="input-group">
             <input
               type="text"
@@ -114,11 +115,7 @@ const Form = () => {
             {errors.message && <ErrorMsg>{errors.message}</ErrorMsg>}
           </div>
           <div className="submit-btn">
-            <button
-              type="submit"
-              id="send-message"
-              disabled={isLoading}
-            >
+            <button type="submit" id="send-message" disabled={isLoading}>
               {!isLoading ? "Send Message" : "Sending..."}
             </button>
           </div>
