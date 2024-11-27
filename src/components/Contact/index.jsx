@@ -7,6 +7,7 @@ import {
   faGithub,
   faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -29,15 +30,15 @@ const Contact = () => {
             <div className="contact-info-item">
               <h3>My Socials</h3>
               <div className="social-links">
-                <a href="https://github.com/z4dev">
+                <Link to="https://github.com/z4dev">
                   <FontAwesomeIcon icon={faGithub} size="1x" />
-                </a>
-                <a href="https://discordapp.com/users/993778906010226749">
+                </Link>
+                <Link to="https://discordapp.com/users/993778906010226749">
                   <FontAwesomeIcon icon={faDiscord} size="1x" />
-                </a>
-                <a href="https://www.linkedin.com/in/izzedeenalfarra">
+                </Link>
+                <Link to="https://www.linkedin.com/in/izzedeenalfarra">
                   <FontAwesomeIcon icon={faLinkedin} size="1x" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

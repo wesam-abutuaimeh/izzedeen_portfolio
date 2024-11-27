@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import "./style.css";
 import MY_PICTURE from "./Izz_pic.jpg";
 import SectionTitle from "../SectionTitle";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-import Education from "./Education"
-import Intership from "./Intership"
-import Projects from "./Projects"
+import Education from "./Education";
+import Intership from "./Intership";
+import Projects from "./Projects";
+import CustomLink from "../CustomLink";
+
 const AboutMe = () => {
   const [education, setEducation] = useState(true);
   const [internship, setInternship] = useState(false);
@@ -96,32 +98,27 @@ const AboutMe = () => {
             <div className="content__container">
               {education && (
                 <div className="tab-content active" id="education">
-               
-               <Education/>
+                  <Education />
                 </div>
               )}
               {internship && (
                 <div className="tab-content active" id="internship">
-                  <Intership/>
-                  </div>
+                  <Intership />
+                </div>
               )}
               {projects && (
                 <div className="tab-content active" id="projects">
-                 <Projects/>
+                  <Projects />
                 </div>
               )}
             </div>
 
             <div className="btns">
-              <a
-                href="https://drive.google.com/file/d/1pqJjCnwkSoZQ4yvW9vdNOB0Bzrf7Nu7I/view"
-                className="btn"
-              >
-                See my CV
-              </a>
-              <Link to="/contact" className="btn link-item">
-                Contact me
-              </Link>
+              <CustomLink
+                target="https://drive.google.com/file/d/1pqJjCnwkSoZQ4yvW9vdNOB0Bzrf7Nu7I/view"
+                text="See my CV"
+              />
+              <CustomLink target="/contact" text="Contact me" />
             </div>
           </div>
         </div>

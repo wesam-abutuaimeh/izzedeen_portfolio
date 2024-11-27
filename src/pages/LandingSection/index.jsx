@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import LANDING_SECTION_IMAGE from "./hello.png";
-import { Link } from "react-router-dom";
+import CustomLink from "../../components/CustomLink";
 
 function LandingSection() {
   return (
@@ -14,15 +14,13 @@ function LandingSection() {
             <h2>
               Backend Web Developer | Technical Inctractor On YouTube Channel
             </h2>
-            <Link to="/about" className="btn link-item">
-              More About Me
-            </Link>
-            <a
-              href="https://www.youtube.com/channel/UC1hgEmeE-bCt4_MFwQQa7qw"
-              className="btn link-item"
-            >
-              Youtube Channel
-            </a>
+           <div className="btns">
+           <CustomLink target="/about" text="More About Me" />
+            <CustomLink
+              target="https://www.youtube.com/channel/UC1hgEmeE-bCt4_MFwQQa7qw"
+              text="Youtube Channel"
+            />
+           </div>
           </div>
           <div className="home-img">
             <div className="img-box">
