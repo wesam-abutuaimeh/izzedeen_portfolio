@@ -139,7 +139,7 @@ a {
 }
 
 .about-text .tab-content {
-  padding: 40px 0;
+  padding: 20px 0;
   display: none;
 }
 
@@ -193,50 +193,26 @@ a {
   margin: 0 15px 15px 0;
 }
 
-.btn {
-  line-height: 1.5;
-  background-color: rgb(255 255 255 / 25%);
-  border: 1px solid rgba(255 255 255 / 0.4);
-  padding: 10px 28px;
-  display: inline-block;
-  border-radius: 30px;
-  color: #e02f6b;
-  font-weight: 500;
-  text-transform: capitalize;
-  font-family: inherit;
-  font-size: 16px;
-  cursor: pointer;
-  user-select: none;
-  position: relative;
-  overflow: hidden;
-  vertical-align: middle;
-  transition: color 0.3s ease;
-  -webkit-transition: color 0.3s ease;
-  -moz-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-  border-radius: 30px;
-
-  &:hover {
-    color: #fff;
-  }
-}
-
 .about__container {
   display: flex;
 }
+
 @media (max-width: 767px) {
   .about__container {
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .about-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .about-img .img-box {
     width: 100%;
-    height: 100%;
     border-radius: 10px;
   }
 }
