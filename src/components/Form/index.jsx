@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ErrorMsg from "../ErrorMsg";
 import axios from "axios";
 import { API_URL } from "../../config/api";
 import "./style.css";
@@ -117,7 +116,6 @@ const Form = () => {
           <div className="submit-btn">
             <button
               type="submit"
-              className="btn"
               id="send-message"
               disabled={isLoading}
             >
