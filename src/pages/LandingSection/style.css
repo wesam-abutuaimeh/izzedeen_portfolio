@@ -41,20 +41,28 @@
   margin: 0 0 30px;
 }
 
-.home-text .btn {
-  margin: 0 15px 15px 0;
+.home-img {
+  .img-box {
+    max-width: 360px;
+    border-radius: 50%;
+    border: 8px solid #ffffff40;
+    margin: auto;
+    > img {
+      width: 100%;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+  }
 }
 
-.home-img .img-box {
-  max-width: 360px;
-  background-color: rgba(red, green, blue, 0.25);
-  border-radius: 50%;
-  border: 8px solid rgb(255 255 255 / 25%);
-  margin: auto;
+.btns {
+  display: flex;
+  gap: 10px;
 }
 
-.home-img .img-box img {
-  width: 100%;
-  border-radius: 50%;
-  vertical-align: middle;
+@media (max-width: 767px) {
+  .btns {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
