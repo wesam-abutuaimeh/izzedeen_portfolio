@@ -1,5 +1,5 @@
-import Form from "../Form";
-import SectionTitle from "../SectionTitle";
+import Form from "../../components/Form";
+import SectionTitle from "../../components/SectionTitle";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

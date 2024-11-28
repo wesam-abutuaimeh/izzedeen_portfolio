@@ -4,8 +4,8 @@ import MainContainer from "./components/MainContainer";
 import Loader from "./components/Loader";
 
 const LandingSection = lazy(() => import("./pages/LandingSection"));
-const AboutMe = lazy(() => import("./components/AboutMe"));
-const Contact = lazy(() => import("./components/Contact"));
+const AboutMe = lazy(() => import("./pages/AboutMe/"));
+const Contact = lazy(() => import("./pages/Contact"));
 const NotFound = lazy(() => import("./pages/NotFound/NotFound"));
 
 function App() {

@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./style.css";
 import MY_PICTURE from "./Izz_pic.jpg";
-import SectionTitle from "../SectionTitle";
+import SectionTitle from "../../components/SectionTitle";
 import { NavLink } from "react-router-dom";
 
-import Education from "./Education";
-import Intership from "./Intership";
-import Projects from "./Projects";
-import CustomLink from "../CustomLink";
+import Education from "../../components/Education";
+import Intership from "../../components/Intership";
+import Projects from "../../components/Projects";
+import CustomLink from "../../components/CustomLink";
 
 const AboutMe = () => {
   const [education, setEducation] = useState(true);
