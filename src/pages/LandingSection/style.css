@@ -9,14 +9,15 @@
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .home-section .container .row {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 10px;
+  }
+}
 .home-section.active {
   display: flex;
-}
-
-.home-text,
-.home-img {
-  width: 50%;
-  padding: 15px;
 }
 
 .home-text p {
