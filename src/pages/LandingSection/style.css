@@ -9,6 +9,10 @@
   align-items: center;
 }
 
+.home-section .container .row {
+  justify-content: space-between;
+}
+
 @media (max-width: 767px) {
   .home-section .container .row {
     flex-direction: column-reverse;
