@@ -14,13 +14,13 @@ function LandingSection() {
             <h2>
               Backend Web Developer | Technical Inctractor On YouTube Channel
             </h2>
-           <div className="btns">
-           <CustomLink target="/about" text="More About Me" />
-            <CustomLink
-              target="https://www.youtube.com/channel/UC1hgEmeE-bCt4_MFwQQa7qw"
-              text="Youtube Channel"
-            />
-           </div>
+            <div className="btns">
+              <CustomLink target="/about" text="More About Me" />
+              <CustomLink
+                target="https://www.youtube.com/channel/UC1hgEmeE-bCt4_MFwQQa7qw"
+                text="Youtube Channel"
+              />
+            </div>
           </div>
           <div className="home-img">
             <div className="img-box">

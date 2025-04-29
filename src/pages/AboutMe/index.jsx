@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import "./style.css";
-import MY_PICTURE from "./Izz_pic.jpg";
 import SectionTitle from "../../components/SectionTitle";
 import { NavLink } from "react-router-dom";
+import "./style.css";
 
 import Education from "../../components/Education";
 import Intership from "../../components/Intership";
@@ -27,7 +26,7 @@ const AboutMe = () => {
         <div className="about__container">
           <div className="about-img">
             <div className="img-box">
-              <img src={MY_PICTURE} alt="about img" />
+              <img src={"/about-image.jpg"} alt="about img" />
             </div>
           </div>
 
